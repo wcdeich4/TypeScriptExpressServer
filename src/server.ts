@@ -1,3 +1,6 @@
+import { ClientRequest } from "http";
+import { ServerResponse } from "http";
+
 const express = require("express")
 const app = express();
 
@@ -9,7 +12,7 @@ app.set("view engine", "ejs");
 
 let data = { languages: ["JavaScript", "TypeScript"] };
 
-app.get("/data", (req: any, res: any) => {
+app.get("/data", (req: ClientRequest, res: ServerResponse) => {
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(data));
 });
