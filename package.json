@@ -1,0 +1,21 @@
+{
+  "name": "typescriptexpressjsserver",
+  "version": "1.0.0",
+  "description": "typescript express js server",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "node ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Deich",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
